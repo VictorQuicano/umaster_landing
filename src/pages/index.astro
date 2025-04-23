@@ -1,12 +1,12 @@
 ---
-import { HeroSlider1, HeroSlider3 } from "@static/images";
+import { HeroSlider1, HeroSlider2, HeroSlider3 } from "@static/images";
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "@modules/Hero";
 ---
 
 <Layout
-    title="Cybernetic | Homepage"
-    description="YOUR META DESCRIPTION FOR SEO"
+    title="Conoce más de UMaster"
+    description="Bienvenida a UMaster, la plataforma de cursos online que te ayudará a alcanzar tus metas profesionales y personales. Con una amplia variedad de cursos en diferentes áreas, podrás aprender a tu propio ritmo y desde la comodidad de tu hogar. ¡Únete a nuestra comunidad de estudiantes y comienza tu viaje hacia el éxito hoy mismo!"
 >
     <main class="page-content">
         <Hero
@@ -14,27 +14,40 @@ import { Hero } from "@modules/Hero";
             heroType="fullPageSlider"
             data={[
                 {
-                    subtitle: "Cybernetic",
-                    title: "Cybernetic",
+                    subtitle: "¡Asegura tu ingreso!",
+                    title: "APRENDE",
                     background: HeroSlider1.src,
                     paragraph:
-                        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                        "Somos una plataforma peruana que te prepara de forma inteligente para tu examen de admisión. Con simulacros, rutinas personalizadas y estudio activo, aprenderás más allá de la memorización.",
                     button: {
-                        text: "Get pro version",
-                        link: "https://codexcode.store/themes/cybernetic-website-template",
+                        text: "Prueba gratis",
+                        link: "#",
                     },
                 },
                 {
-                    subtitle: "Be Safe, Be Secure, Be Cybernetic",
-                    title: "infinite",
-                    background: HeroSlider3.src,
-                    paragraph: "",
+                    subtitle: "Estudia mejor, no más",
+                    title: "ENTRENA",
+                    background: HeroSlider2.src,
+                    paragraph:
+                        "Domina los temas con prácticas personalizadas y repaso activo. Nuestro sistema adapta el contenido según tu progreso y te ayuda a mejorar en lo que más necesitas.",
                     button: {
-                        text: "Take a look",
-                        link: "/infinite",
+                        text: "Ver cómo funciona",
+                        link: "#como-funciona",
                     },
                 },
-            ]}
+                {
+                    subtitle: "Confianza que se construye",
+                    title: "SUPÉRATE",
+                    background: HeroSlider3.src,
+                    paragraph:
+                        "Mide tu avance con estadísticas en tiempo real. Simula exámenes reales, gana seguridad en ti mismo y llega al examen listo para darlo todo.",
+                    button: {
+                        text: "Comienza hoy",
+                        link: "#",
+                    },
+                },
+            ]
+            }
         />
     </main>
 </Layout>
