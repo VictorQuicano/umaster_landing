@@ -88,7 +88,7 @@ export const FullPageSlider: FC<FullPageSliderProps> = ({ content }) => {
             {slides.length > 1 ? (
                 <>
                     <S.FullPageSliderTextToSlide>
-                        Swipe to slide
+                        Desliza para avanzar
                         <Icon iconData="arrowRight" alt="arrow icon" />
                     </S.FullPageSliderTextToSlide>
                     <div className="swiper-pagination"></div>

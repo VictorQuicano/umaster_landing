@@ -2,6 +2,7 @@ import { type FC } from "react";
 import PreviewPng from "./preview.webp";
 import HeroImg from "./hero-img.webp";
 import Logo from "./logo.webp";
+import Logo2 from "./logo2.webp";
 
 import HeroSlider1 from "./slider_1.webp";
 import HeroSlider2 from "./slider_2.webp";
@@ -14,6 +15,7 @@ export const images = {
   preview: PreviewPng,
   heroImg: HeroImg,
   logo: Logo,
+  logo2: Logo2,
 };
 
 export type ImageProps = {
