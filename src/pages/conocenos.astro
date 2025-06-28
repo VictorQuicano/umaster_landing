@@ -3,12 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import { Hero } from "@modules/Hero";
 import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
+import {TeamCards } from "modules/TeamCards"
 import { Footer } from "@modules/Footer";
 ---
 
 <Layout
-    title="Cybernetic | Homepage"
-    description="YOUR META DESCRIPTION FOR SEO"
+    title="Conoce a Umaster"
+    description="Conoce a nuestro equipo emprendedor y la propuesta Umaster"
 >
     <main class="page-content">
         <Hero
@@ -17,46 +18,46 @@ import { Footer } from "@modules/Footer";
             data={{
                 image: HeroSlider3.src,
                 content: {
-                    title: "INFINITE",
+                    title: "UMASTER",
                     paragraph:
                         "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
                 },
             }}
         />
         <ServiceCards
-            description="SERVICES"
-            title="The Service We Provide For You"
+            description="SERVICIOS"
+            title="¿Qué te ofrece uMaster?"
             client:visible
             cards={[
                 {
-                    title: "Cyber - development",
+                    title: "Preparación preuniversitaria",
                     description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                        "Accede a contenido alineado con los exámenes de admisión de universidades peruanas, públicos y privados, de forma clara, estructurada y accesible.",
                 },
                 {
-                    title: "Cyber - Security",
+                    title: "Simulacros y repaso activo",
                     description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                        "Entrena con simulacros realistas y repaso activo que fortalece tu memoria a largo plazo, acompañado de estadísticas personalizadas.",
                 },
                 {
-                    title: "Cyber - Marketing",
+                    title: "Planes para instituciones",
                     description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                        "Ofrecemos planes especiales para colegios y academias, con seguimiento de progreso por estudiante y acceso a recursos educativos exclusivos.",
                 },
                 {
-                    title: "Cyber - Development",
+                    title: "Rutinas de estudio personalizadas",
                     description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                        "Diseñamos un camino de estudio adaptado a tu nivel y objetivos, optimizando tu tiempo y manteniéndote motivado.",
                 },
                 {
-                    title: "Cyber - Security",
+                    title: "Contenido explicado, no memorizado",
                     description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                        "Priorizamos el aprendizaje real con explicaciones paso a paso, no solo respuestas, para comprender y no solo repetir.",
                 },
                 {
-                    title: "Cyber - Marketing",
+                    title: "Acceso flexible y escalable",
                     description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+                        "Disponible desde cualquier dispositivo, sin horarios fijos ni restricciones físicas, con opciones freemium y suscripciones accesibles.",
                 },
             ]}
         />
@@ -69,13 +70,14 @@ import { Footer } from "@modules/Footer";
                     src: InfiniteImg1.src,
                     width: 590,
                     height: 300,
-                    alt: "Hero Image",
+                    alt: "Imagen plataforma uMaster",
                 },
-                title: "Lets make you Infinite!",
+                title: "Prepárate con uMaster",
                 paragraph:
-                    "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+                    "Accede a una plataforma educativa que te entrena para tu examen de admisión con estrategias inteligentes, contenido claro y seguimiento de tu progreso.",
             }}
         />
+
         <Hero
             heroType="textImage"
             client:visible
@@ -85,11 +87,11 @@ import { Footer } from "@modules/Footer";
                     src: InfiniteImg2.src,
                     width: 590,
                     height: 300,
-                    alt: "Hero Image",
+                    alt: "Comunidad uMaster",
                 },
-                title: "Infinite Community",
+                title: "Hecho para estudiantes como tú",
                 paragraph:
-                    "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+                    "Con uMaster, miles de estudiantes pueden estudiar a su ritmo, desde cualquier lugar, sin barreras económicas o geográficas. ¡Estudia mejor, sin memorizar!",
             }}
         />
     </main>
